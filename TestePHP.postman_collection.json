@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "1fe4b59a-46ba-49ac-b333-8d81f747486b",
+		"name": "TestePHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12223727",
+		"_collection_link": "https://crimson-water-481895.postman.co/workspace/My-Workspace~7dca4bc7-d9d1-4b0a-8f49-584651393e2d/collection/12223727-1fe4b59a-46ba-49ac-b333-8d81f747486b?action=share&source=collection_link&creator=12223727"
+	},
+	"item": [
+		{
+			"name": "requestGET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/Controller/usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"Controller",
+						"usuario.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"nome\": \"Patricia Souza\",\r\n    \"email\": \"patricia.souza@email.com\",\r\n    \"telefone\": \"222333444\",\r\n    \"dataNascimento\": \"1984-03-08\",\r\n    \"senha\": \"senha123r\",\r\n    \"papel\": \"usuario\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/Controller/usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"Controller",
+						"usuario.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"2\",\r\n        \"nome\": \"Mary\",\r\n        \"email\": \"maria@email.com\",\r\n        \"telefone\": \"987654322\",\r\n        \"dataNascimento\": \"1985-08-22\",\r\n        \"senha\": \"senha\",\r\n        \"papel\": \"admin\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/Controller/usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"Controller",
+						"usuario.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPATCH",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "requestDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/Controller/usuario.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"Controller",
+						"usuario.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
